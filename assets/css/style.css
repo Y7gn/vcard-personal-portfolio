@@ -153,7 +153,7 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-poppins); font-size: 10px}
 
 body { background: var(--smoky-black); }
 
@@ -456,7 +456,7 @@ main {
 
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
@@ -759,7 +759,11 @@ main {
 
 
 
-
+.container{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -1221,7 +1225,46 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
+.footer{
+  background: var(--eerie-black-2);
+  height:50px;
+  display: flex;
+  width: 100%;
+  align-items: center;padding-left: 43px;
+  padding-left: 0rem;
+}
+.footerContainer{
+  margin: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
+}
+.footerTitle1{
+  font-size: 16rem;
+}
+.footerContainer{
+  display: flex;
+}
+.footerParagraph{
+  color: rgba(240, 248, 255, 0.576);
+}
+
+.leftFooter{
+
+}
+.rightFooter{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.textFooter{
+  color: white;
+  font-size: 30px;
+  display: flex;
+    align-items: center;
+}
 
 
 
@@ -1234,25 +1277,30 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
-
+  .footer{
+    padding-left: 0px;
+  }
   /**
-   * client
-   */
-
+  * client
+  */
+  
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
+  
+  
+  
   /**
-   * #PORTFOLIO, BLOG 
-   */
-
+  * #PORTFOLIO, BLOG 
+  */
+  
   .project-img,
   .blog-banner-box { height: auto; }
-
+  
 }
 
 
+.textFooter{
+  font-size: 10px;
+}
 
 
 
@@ -1261,7 +1309,12 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 580px) {
-
+  .textFooter{
+    font-size: 12px;
+  }
+  .footer{
+    padding-left: 0px;
+  }
   /**
    * CUSTOM PROPERTY
    */
@@ -1311,7 +1364,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
+  .textFooter{
+    font-size: 10px;
+  }
 
   /**
    * #MAIN
@@ -1550,7 +1605,13 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 768px) {
-
+  .textFooter{
+    font-size: 16px;
+  }
+  .footer{
+    padding-left: 43px;
+  }
+  
   /**
    * REUSED STYLE
    */
